@@ -12,6 +12,6 @@ Propriedades CSS que usei nessa página:
 
 - `animation`, torna a possível animar transições de um estilo para outro através das regras CSS da animação e do uso dos keyframes.
 <br>
-<br>
+
 
 ![animação](./.github/tela.gif)
