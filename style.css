@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@100&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     color: #ffffff;
     font-family: 'Amatic SC', sans-serif;
 }
 
-.wrapper{
+.wrapper {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(-45deg, #5e0878, #085078, #4ca59b, #1fa194);
-    /*linear-gradient deixa colocar várias cores que se misturam, formando um degradê*/
+    /* linear-gradient deixa colocar várias cores que se misturam, formando um degradê */
 
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 
     /*animation: name duration timing-function delay iteration-count direction fill-mode;
 
@@ -31,28 +30,31 @@ body{
     /*lembrando: ease-in-out: transição com início e final da animação lentos.*/
 }
 
-h1{
+h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-h2{
+h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.social-media{
+.social-media {
     margin-top: 1rem;
     display: flex;
 }
 
-a{
-    text-decoration: none; /*para tirar o sublinhado do link*/
+a {
+    text-decoration: none;
+    /*para tirar o sublinhado do link*/
     color: #ffffff;
     font-size: 24px;
-    padding: 1rem 4rem; /*vertical e depois horizontal*/
+    padding: 1rem 4rem;
+    /*vertical e depois horizontal*/
     border: 1px solid #ffffff;
-    min-width: 4rem; /*como o tamanho das palavras era diferente, apliquei uma largura mínima para ficar mais
+    min-width: 4rem;
+    /*como o tamanho das palavras era diferente, apliquei uma largura mínima para ficar mais
     harmônico, ficando os 2 com o mesmo tamanho inicial(linkedin e o github)*/
     display: flex;
     justify-content: center;
@@ -63,21 +65,31 @@ a{
     por já terem valores pré-definidos, o cubic-bezier você controla*/
 }
 
-a:hover{
+a:hover {
     color: #085078;
     background-color: #ffffff;
 }
 
 @keyframes backgroundTransition {
+
     /*fases da animação*/
-    0%{
+    0% {
         background-position: 0% 80%;
     }
-    50%/*meio da animação*/{
+
+    50%
+
+    /*meio da animação*/
+        {
         background-position: 80% 100%;
     }
-    100%/*ao final da animação, ou quando acabar o tempo dela*/{
-        background-position: 0% 90%; /*lembrando que a position é onde a nossa background vai ficar dentro
+
+    100%
+
+    /*ao final da animação, ou quando acabar o tempo dela*/
+        {
+        background-position: 0% 90%;
+        /*lembrando que a position é onde a nossa background vai ficar dentro
         do elemento container(elemento pai)*/
     }
 }
